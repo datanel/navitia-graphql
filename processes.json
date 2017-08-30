@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "name": "navitia-graphql",
+            "script": "./server.js",
+            "merge_logs": true,
+            "env": {
+                "PORT": 4500,
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}

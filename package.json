@@ -1,0 +1,29 @@
+{
+  "name": "navitia-grapql",
+  "version": "0.1.0",
+  "description": "An example of GraphQL over navitia.io API",
+  "main": "./server.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "start:prod": "NODE_ENV=production node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "navitia",
+    "graphql"
+  ],
+  "author": "David Quintanel <david.quintanel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^1.1.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.13.4",
+    "graphql": "^0.10.5",
+    "graphql-tools": "^1.2.1",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
