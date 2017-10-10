@@ -4,12 +4,12 @@ const resolvers = require('./resolvers');
 const typeDefs = `
     interface Generic {
         id: String!
-        name: String!
+        name: String
     }
 
     type Coverage implements Generic {
         id: String!
-        name: String!
+        name: String
         networks: [Network]
     }
 
@@ -25,7 +25,7 @@ const typeDefs = `
     }
 
     type Query {
-        coverages(id: String!): [Coverage]
+        coverages(id: String): [Coverage]
         networks(coverage: String!, id: String): [Network]
     }
 `;
